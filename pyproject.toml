@@ -1,9 +1,20 @@
-[tool.poetry]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
 name = "sow_and_reap_support"
 version = "0.1.0"
 description = ""
-authors = ["Srinivas Aripirala"]
+authors = [
+    {name = "Srinivas Aripirala"}
+]
 readme = "README.md"
+requires-python = "^3.9"
+dependencies = ["fastkml (>=1.1.0,<2.0.0)", "shapely (>=2.0.7,<3.0.0)"]
+dynamic = ["dependencies"]
+
+[tool.poetry]
 packages = [{include = "sow_and_reap_support", from = "src"}]
 package-mode = false
 
@@ -15,10 +26,6 @@ pytest = "^7.4.0"
 black = "^23.7.0"
 flake8 = "^6.1.0"
 isort = "^5.12.0"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
 
 [tool.black]
 line-length = 88

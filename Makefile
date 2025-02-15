@@ -1,7 +1,7 @@
 .PHONY: setup clean test lint format
 
 setup:
-	python -m venv .venv
+	python3 -m venv .venv
 	. .venv/bin/activate && pip install poetry
 	. .venv/bin/activate && poetry install
 
