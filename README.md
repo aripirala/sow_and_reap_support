@@ -15,7 +15,7 @@
 ## Getting Started
 
 ### Prerequisites
-- Python 3.9 or higher
+- Python 3.11 or higher
 - pip (Python package installer)
 - Make (recommended)
 
@@ -30,7 +30,7 @@
 2. Create and activate the virtual environment:
    ```bash
    # Create virtual environment
-   python -m venv .venv
+   python3.11 -m venv .venv
 
    # Activate virtual environment
    # On Unix/macOS:
